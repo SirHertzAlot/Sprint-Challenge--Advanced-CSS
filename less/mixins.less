@@ -1,1 +1,16 @@
 // Mixins Here
+
+.flex(@center,@direction){
+    display:flex;
+    justify-content:@center;
+    flex-direction:@direction;
+    align-items:center;
+}
+.size(){
+    font-size:3.6rem;
+}
+.btn(@btn-bg-color,@sea-shell,@nav-font){
+    background:@btn-bg-color;
+    color:@sea-shell;
+    font-family:@nav-font;
+}
