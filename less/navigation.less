@@ -1,1 +1,21 @@
 // Navigation code here
+@import 'mixins.less';
+
+header.top {
+    .flex(null,column);
+    background-color:whitesmoke;
+    nav {
+        .flex(space-evenly,row);
+        width:400px;
+        background: @nav-bg;
+        border: @nav-border;
+        a {
+            margin: 10px;
+            text-decoration:none;
+            font-weight:600;
+            color: @main-font-color;
+            font-family: @nav-font;
+            font-size:1.6rem;
+        }
+    }
+}
